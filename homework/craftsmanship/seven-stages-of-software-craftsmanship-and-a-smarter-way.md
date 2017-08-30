@@ -7,8 +7,11 @@ http://www.wayland-informatics.com/The%20Seven%20Stages%20of%20Expertise%20in%20
 
 ## Then answer these questions and post them to Schoology:
 - What stage are you currently in?
+    - Stage 3
 - What stage would you like to be in when you complete this WDI course?
+    - Stage 6
 - What stage would you hope to be in one year after completing this course? Five years?
+    - Stage 7
 
 # A Smarter Way to Learn JavaScript (ch 6-10)
 Work through Chapters 6-10 (don't worry, there are a lot of blank pages) http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf
