@@ -61,12 +61,41 @@ how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
 > Answer here
+  let tasks ={
+      name: 'mileageTracker',
+      stateDate: 02/1/2017,
+      completeDate: 05/22/2017,
+      status: 'finish'
+  }
+
+let projects ={
+    name: 'Project',
+    description: 'build a mileage track aps',
+    setOfTasks: ['create index page', 'create css page', 'create js page',
+    'link these pages', 'build a page layout', 'create buttons','create the result output']
+}
+
 
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
 > Answer here
+let users = {
+  username: 'John',
+  imageUpload: ['images/john1.jpeg']
+  albumCreated: ['Atlanta trip']
+}
+
+let photo = {
+  name: 'atlanta trip pic',
+  date: 'July 2015',
+  url: 'images/john1.jpeg'
+}
+let album = {
+  name:'Atlanta trip',
+  setOfPhotos: ['images/john1.jpeg']
+}
 
 ### 3. Home Automation Manager
 
@@ -76,14 +105,39 @@ information to turn on and off different lights and adjust the thermostat up
 and down.
 
 > Answer here
+let homeThermostat = {
+  temp: '75 degrees',
+  setOfLights: ['bedroom', 'living room','bathroom','kitchen']
+}
+
+let light ={
+  brandName: 'goldenwhite',
+  location: 'bathroom',
+  lightWatt: 'daylight'
+}
 
 ### 4. Sneaker Store
 
 This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
-
 > Answer here
+let products = {
+  name: 'nike air',
+  color: 'black and white',
+  description: 'made in usa'
+}
+
+let orderItem ={
+      product: 'nike air',
+      quatity: 1
+}
+let order = {
+  numOfOrder: [orderItem], 
+  status: 'shipped',
+  dateComplete: 'complete'
+}
+
 
 ## Representing Abstractions in Code
 
@@ -140,6 +194,10 @@ var exampleLine = {
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
 > Answer here
+Advantage: details of every train stops
+Disadvantage: Does not have how many numbers of stop train makes
+
+
 
 ### 6. Doctor Appointment App
 
@@ -241,8 +299,11 @@ What are some relative advantages and disadvantages of each representation?
 Under what circumstances might one representation be a better choice than the
 other? Are there any circumstances in which the other representation might be
 the better choice?
-
 > Answer here
+Option 1, Can directly see all the appointments doctor has using their name or id. 
+Option 2, Doctors have to look under the date to see their appointments. 
+Option 1 is better for doctors to see how their schedule looks like
+Option 2 need more clicks for doctors to see their appointments
 
 ## Tying It Together
 
