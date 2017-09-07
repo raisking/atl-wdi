@@ -314,7 +314,7 @@ You've been tasked with building an in-browser tic-tac-toe game.
 a.  What are some possible entities that your application might use to model its
     data? Please pick at least two, with at least two properties apiece.
 
-  > Answer here
+  > Answer here 
 
 b.  How might those entities be represented in JavaScript code?
 

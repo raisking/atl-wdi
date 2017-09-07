@@ -3,16 +3,35 @@
 // See LICENSE for details.
 
 var timerUI = {
-  drawNumericDisplay: function(timerValue){
-    // Your Code Here
-  },
-  drawProgressBars: function(timerValue){
-    // Your Code Here
-  },
-  drawLitFuses: function(timerValue){
-    // Your Code Here
-  },
-  drawCrawlers: function(timerValue){
-    // Your Code Here
-  }
+          drawNumericDisplay: function(timerValue){
+            var numericDisplay = document.getElementById('numeric-display');
+            numericDisplay.textContent = timerValue;
+            if(timerValue <= 10){
+                numericDisplay.style.color = 'red';
+                var newSize = (1.5 * Math.pow(1.05, 11 - timerValue).toFixed(2));
+                numericDisplay.style.fontSize = newSize + 'em';
+
+            }  
+          },
+          drawProgressBars: function(timerValue){
+            var timeElapsed = 100 - timerValue;
+            document.getElementsByClassName('progress-bar')[0].style.width = timeElapsed + '%';
+         
+            
+          },
+          drawLitFuses: function(timerValue){
+            var percentUnburnt = timerValue/100;
+            document.getElementsByClassName('unburnt')[0].style.width = percentUnburnt * 98 + '%';
+            document.getElementsByClassName('burnt')[0].style.width = (1 - percentUnburnt) * 98 + "%";
+          },
+          drawCrawlers: function(timerValue){
+            let timeElapsed = 100 - timerValue;
+            if(timerValue % 2 === 0){
+                document.getElementsByClassName('crawler')[0].style.marginTop = '0px';
+              } else {
+                  document.getElementsByClassName('crawler')[0].style.marginTop = '10px';       
+              }
+              document.getElementsByClassName('crawler')[0].style.marginLeft = (timeElapsed * 10) + 'px';
+            
+          }
 };
