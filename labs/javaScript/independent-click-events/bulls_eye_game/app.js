@@ -32,6 +32,13 @@ var bullseyeGame = {
   updateScore: function(points) {
     var scoreElement = document.querySelector('.score');
     this.score += points
+    // if clicked on ring 3 , score is 100 points
+  //  if(document.querySelector("ring-3").addEventListener("click", function(){
+  //    alert("You clicked 3");
+  //  })
+    //if clicked on ring 2 , score is 50 points
+    //if clicked on ring 1, score is 10 points
+    //else score is 0 point
 
     scoreElement.innerHTML = `${this.score} points`
   },
@@ -43,7 +50,6 @@ var bullseyeGame = {
     bullseyeGame.updateScore(0);
     // [ALERT:] needs to be bullseyeGame because this in clickEvents refers to the html element that was clicked
   },
-
   outerRing: function(event) {
     event.stopPropagation();
     alert('outerRing was clicked')

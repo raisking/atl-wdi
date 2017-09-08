@@ -8,7 +8,7 @@ var timerUI = {
             numericDisplay.textContent = timerValue;
             if(timerValue <= 10){
                 numericDisplay.style.color = 'red';
-                var newSize = (1.5 * Math.pow(1.05, 11 - timerValue).toFixed(2));
+                var newSize = ( 1.5 * Math.pow(1.05, 11 - timerValue).toFixed(2));
                 numericDisplay.style.fontSize = newSize + 'em';
 
             }  
