@@ -3,6 +3,10 @@
 var express = require('express');
 //save an express module as 'app'
 var app = express();
+var hbs = require('hbs');
+
+app.set("view engine", "hbs");
+app.set('views', './views');
 
 
 
@@ -24,7 +28,7 @@ route will look like this:
   
 app.get('/order/:amount/:size', (req, res) => {
         console.log(req.params);
-         res.send(`Your order for ${req.params.amount}, ${req.params.size} pizzas will be ready in 1 minute!` );
+         res.send(`Your order for ${req.params.amount}, ${req.params.size} pizzas will be ready in 1 minute!    ` );
      });
 
 // assigning 3000 as our port
