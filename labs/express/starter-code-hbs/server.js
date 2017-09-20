@@ -16,7 +16,7 @@ const todosController =require("./controllers/todos");
 app.use( logger('dev'));
 var bodyParser = require('body-parser');
 
-app.use(bodyParser.urlencoded({
+app.use(bodyParser.urlencoded({ 
     extended: true
 }));
 
