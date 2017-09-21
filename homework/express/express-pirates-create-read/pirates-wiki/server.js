@@ -4,10 +4,10 @@ var logger      = require('morgan');
 //morgan logger middleware function using the given format and options
 var express     = require('express');
 var hbs         = require('hbs');
+var bodyParser = require('body-parser');
 
-const bodyparser = require('body-parser');
 // include the method-override package
-// var methodOverride = require('method-override');
+var methodOverride = require('method-override');
 
 /* app settings*/
 var app         = express();
@@ -16,12 +16,13 @@ var port        = process.env.PORT || 3000;
 var pirateController = require('./controllers/pirates.js');
 
 
-// app.use(methodOverride('_method'));
+app.use(methodOverride('_method'));
 
 //log
 app.use(logger('dev'));
 
-// app.use(bodyParser.urlencoded({extended: true}));
+
+app.use(bodyParser.urlencoded({extended: true}));
 /*Views*/
 app.set('view engine', 'hbs');
 
