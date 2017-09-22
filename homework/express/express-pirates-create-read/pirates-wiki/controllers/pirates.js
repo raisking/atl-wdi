@@ -51,7 +51,6 @@ router.get('/:id/edit', (req, res) =>{
 /*******UPDATE EDIT DATA*********/
 router.put('/:id', function(req, res){
     var editPirateInfo = pirates[req.params.id];
-
     editPirateInfo.name = req.body.name;
     editPirateInfo.birthplace = req.body.birthplace;
     editPirateInfo.death_year = req.body.death_year;
@@ -62,8 +61,7 @@ router.put('/:id', function(req, res){
 
 /*******DELETE***********/
 router.delete('/:id', function(req, res){
-    pirates.splice(parseInt(req.params.id),1);
-    //removes item from array
+    pirates.splice(parseInt(req.params.id),1);//removes item from array  
     res.redirect('/pirates')
     
 })
