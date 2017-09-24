@@ -1,11 +1,14 @@
 
 const kitchen = require('./kitchen');
-
 // Look at the Menu
 /* *************************************************************** */
 // 1. Kitchen has a method called `.readMenu`.  
 // Call this method and console.log the data that comes back when the Promise is resolved.
-readMenu();
+
+
+kitchen.readMenu()
+    .then(console.log)
+    .catch(console.log);
 
 //CODE FOR QUESTION 1 HERE
 
@@ -15,6 +18,9 @@ readMenu();
 // 2. For this task, you will use the method `.order` to order a a burger from the menu.  
 //  The order method has one argument, the name of the burger you would like to order.  
 //  Console.log the data that comes back about this burger.
+kitchen.order("four horsemen")
+  .then(console.log)
+  .catch(console.log);
 
 // CODE FOR QUESTION 2 HERE
 
@@ -22,6 +28,10 @@ readMenu();
 // 3. Try and use the same method to order a `quesadilla`.  
 //  Since Promise Burger only serves burgers, this will throw an error.  
 //  Make sure that your Promise can be dealt with when it is rejected.
+
+kitchen.order("quesadilla")
+  .then(console.log)
+  .catch(console.log);
 
 // CODE FOR QUESTION 3 HERE
 
@@ -42,12 +52,27 @@ const newBurger = {
 }
 
 // CODE FOR QUESTION 4 HERE
+kitchen.addToMenu(newBurger).then((data) =>{
+  return kitchen.readMenu();
+}).then((data)=>{
+  console.log();
+})
+.catch((data)=>{
+  console.log();
+})
+kitchen.order('triple coronary bypass')
+  .then(console.log)
+  .catch(console.log)
+
 
 // 5. Validate that the new item has been added to the menu by calling `readMenu` again.  
 // We only want to call `readMenu` after we get a response that is successful. 
 // Remember that we can chain promises together the same way that we can chain jQuery methods.
 
 // REFACTOR QUESTION 4 TO ACCOUNT FOR THIS REQUIREMENT
+kitchen.readMenu()
+  .then(console.log)
+  .catch(console.log)
 
 // Stretch Goals
 /* *************************************************************** */
@@ -57,7 +82,6 @@ const newBurger = {
 // Loop through each customer and use the `.order` function on each object within the array.  
 // Then console.log `All Food Delivered` when ALL of the promises have been resolved.  
 // This will require you to use a method we haven't covered in class.
-
 const customers = [
   {
     name: "Josie",
@@ -73,5 +97,8 @@ const customers = [
     order: "Fat Elvis"
   }
 ]
-
 // CODE FOR QUESTION 6 HERE
+var foodOrder = customers.map((myorder)=>{
+  return myorder.order;
+})
+console.log(foodOrder);

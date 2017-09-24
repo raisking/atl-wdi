@@ -137,28 +137,3 @@ const menu = [
     order,
     addToMenu
   };
-  kitchen.readMenu().then(console.log).catch(console.log);
-  kitchen.readMenu()
-    .then((data)=>
-    {
-        console.log(data);
-    })
-    .catch((error) =>{
-        console.log(error);
-    })
-
-    //add a new burger 
-    kitchen.addToMenu(newBurger).then(kitchen.readMenu).then(console.log);
-    kitchen.addToMenu(newBurger).then((data)=>{
-        return kitchen.readMenu()
-    }) .then(data) =>{
-        console.log(data;)
-    }
-
-    });
-
-// look for promise.all 
-
-
-
-    kitchen.readMenu.then(console.log).catch(console.log);
