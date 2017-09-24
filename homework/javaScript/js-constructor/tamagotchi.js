@@ -38,19 +38,18 @@ class watsupTamagotchi{
             this.sickTimer = setInterval(() =>{
                 here.puke();
             }, 20000)
-        }
-};
+        };
+       stop(){
+           console.log("Stop" + this.name);
+           clearInterval(this.hungerTimer);
+           clearInterval(this.yawnTimer);
+           clearInterval(this.sickTimer);
+       }
 
-
-
-
-
-
-
-    
+};  
 //create new Tamagotchis
 var constructorObj1 = new watsupTamagotchi();
-var constructorObj2 = new watsupTamagotchi();
+var constructorObj2 = new watsupTamagotchi("John");
 
 console.log(constructorObj1);
 console.log(constructorObj2);
@@ -60,4 +59,7 @@ constructorObj2.puke();
 
 
 //test out your Tamagotchies below via console.logs
-console.log(watsupTamagotchi)
+console.log(watsupTamagotchi);
+
+var john = new watsupTamagotchi("john");
+john.start();
