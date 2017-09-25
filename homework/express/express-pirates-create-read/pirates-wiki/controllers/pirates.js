@@ -59,12 +59,7 @@ router.put('/:id', function(req, res){
     res.redirect('/pirates');
 })
 
-/*******DELETE***********/
-router.delete('/:id', function(req, res){
-    pirates.splice(parseInt(req.params.id),1);//removes item from array  
-    res.redirect('/pirates')
-    
-})
+
 
 /******POST*********/
 router.post('/', (req, res)=>{
@@ -74,6 +69,11 @@ router.post('/', (req, res)=>{
     res.redirect('/pirates');           
   
   })
-
+/*******DELETE***********/
+router.delete('/:id', function(req, res){
+    pirates.splice(parseInt(req.params.id),1);//removes item from array  
+    res.redirect('/pirates')
+    
+})
 //exports
 module.exports = router;

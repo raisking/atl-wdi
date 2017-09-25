@@ -21,8 +21,8 @@ app.use(methodOverride('_method'));
 //log
 app.use(logger('dev'));
 
-
 app.use(bodyParser.urlencoded({extended: true}));
+
 /*Views*/
 app.set('view engine', 'hbs');
 
@@ -32,7 +32,9 @@ app.use("/pirates", pirateController);
 app.get('/', function(req,res) {
     res.send('Pirates');
   });
-
+app.get("*",(req, res) =>{
+  res.send("Invalid dir");
+})
 
 // Start server
 app.listen(port, function() {
