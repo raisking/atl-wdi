@@ -30,7 +30,20 @@ entities/abstractions (e.g. Senior Paws app, above) that the app might use, and 
 This app provides easy access to all your e-mail service providers in one app. The app will let you select one of your email addresses and view your e-mails for that address.
 
 ```
-Write your answer here or in a separate js file.
+const myemail = {
+  emailid: String,
+  sender: String,
+  date: String,
+  message: String,
+  timezone: String
+}
+
+const sender = {
+  name: String,
+  email: String,
+  time : String,
+  location: String
+}
 ```
 
 ### 2. Radio on the Internet app
@@ -39,7 +52,20 @@ This app hosts a ton of radio stations, each featuring their own playlists of so
 
 
 ```
-Write your answer here or in a separate js file.
+const radio-station = {
+  id: Number,
+  station: String,
+  genre: [], 
+  host: [], 
+
+}
+
+const station = {
+    id: Number,
+    name: String,
+    location: String
+}
+
 ```
 
 ### 3. Rock Concert App
@@ -47,19 +73,68 @@ Write your answer here or in a separate js file.
 This app will be a tool for managing all of your favorite bands' concerts; it will keep track of their tour dates, ticket purchasing, and next recommended show.
 
 ```
-Write your answer here or in a separate js file.
+const favoritebands = {
+  id: Number,
+  name: String,
+  country: String,
+  genre: String,
+  tourDate: date,
+  ticketPice: Number,
+  show: String
+}
+
+const genre = {
+  name : String,
+  tourDate: date,
+  location: String,
+  ticket: Number
+}
+
+
 ```
 
 ### 4. Coffee To-Go App
 
 This app will allow customers to browse a list of coffeeshops nearby, order drinks off of their menu, add those drinks to a shopping cart, and save that cart as a past order once the purchase is complete.
 
+const findCoffeeApp = {
+  name: String, 
+  distance: Number,
+  openHours: String,
+  drink: [],
+}
+const name = {
+    drink: [],
+    price: Number,
+    currentOrder: String,
+    orderHistory : String
+}
+
 ### 5. Team Tracker App
 
 This app shows you all the latest stats from your favorite sports teams. You can view individual player stats and full team stats.
 
 ```
-Write your answer here or in a separate js file.
+const sportTeam = {
+  name: String,
+  player: [],
+  location: String,
+  lastGame: Date,
+  upComing: Date,
+  owner: [],
+  rating: Number,
+  revenue: Number,
+}
+
+const player = {
+  name: String,
+  age: Number,
+  dateOfBirth = Number,
+  height: Number,
+  race: String,
+  hometown: String,
+  nationality: String,
+}
 ```
 
 
@@ -68,7 +143,9 @@ Write your answer here or in a separate js file.
 Q. When you were creating relationships between the models, what were some thoughts or questions you had to help guide a connection between them?
 
 ```
-Write your answer here or in a separate js file.
+Questions myself, what are the things comes up when I google coffee shops near me. Putting myself in that position what are things I expect when I look for a individual player profile or wiki. 
+
+
 ```
 
 ### Reading and Videos for Tomorrow
