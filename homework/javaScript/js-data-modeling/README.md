@@ -31,7 +31,7 @@ This app provides easy access to all your e-mail service providers in one app. T
 
 ```
 const myemail = {
-  emailid: String,
+  id: Number,
   sender: String,
   date: String,
   message: String,
@@ -39,6 +39,7 @@ const myemail = {
 }
 
 const sender = {
+  id: Number,
   name: String,
   email: String,
   time : String,
@@ -84,6 +85,7 @@ const favoritebands = {
 }
 
 const genre = {
+  id: Number,
   name : String,
   tourDate: date,
   location: String,
@@ -116,6 +118,7 @@ This app shows you all the latest stats from your favorite sports teams. You can
 
 ```
 const sportTeam = {
+  id: Number,
   name: String,
   player: [],
   location: String,
@@ -127,6 +130,7 @@ const sportTeam = {
 }
 
 const player = {
+  id: Number,
   name: String,
   age: Number,
   dateOfBirth = Number,
