@@ -6,10 +6,24 @@ var express = require("express");
 var app = express();
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
-var methodOverride = require("method-override");
+var methodOverrid// = require("method-override");
 var hbs = require("hbs");
 var logger = require('morgan');
+const methodOverride = require('method-override');
 
+//promise because it is separately operated
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/donut_store');
+
+//db connection
+const db = mongoose.connection
+
+db.on('error', function (err) {
+    console.log(err);
+});
+db.once('open', function () {
+    console.log("database has been connected!");
+});
 
 //======================
 // MIDDLEWARE
@@ -20,7 +34,7 @@ app.use(express.static("public"));
 app.use(methodOverride("_method"));
 
 app.set("view engine", "hbs");
-app.set('views', './views');
+app.set('views', './views'); 
 
 app.use(express.static(__dirname + 'public'));
 app.use( logger('dev'));
@@ -41,5 +55,8 @@ app.use('/', donutsController);
 //======================
 //CONNECT MONGOOSE TO "donut_store"
 
-
 //CREATE THE MONGOOSE CONNECTION and SET APP TO LISTEN to 3000
+const PORT = 3000;
+app.listen(PORT, () =>{
+    console.log(`Express started on ${PORT}`)
+})
