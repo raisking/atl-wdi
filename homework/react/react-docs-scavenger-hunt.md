@@ -5,6 +5,7 @@
 ### Post answers (and links to where you found them) for each of the questions below:
 
 1. Can we use `npm` with React or do we have to use `yarn`?
+ => npm is use with React . 
 
 2. We are using JSX to write HTML inside of our React. Are we required to use JSX with React? Are there any alternatives?
 
