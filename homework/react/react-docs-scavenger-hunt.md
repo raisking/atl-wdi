@@ -8,7 +8,7 @@
 => npm is use with React
 
 2. We are using JSX to write HTML inside of our React. Are we required to use JSX with React? Are there any alternatives?
-=> JSX is 
+=> No it is not required. JavaScript is an alternative.
 
 3. Does React re-render the entire component when one part of it changes?
 => No
