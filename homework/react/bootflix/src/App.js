@@ -5,7 +5,7 @@ import Movie from './components/Movie';
 import example from './omdbExample.json'
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
       movie: example
@@ -13,12 +13,20 @@ class App extends Component {
   }
 
   //Update these methods to make axios calls to OMDB and update this.state.movie with the response from the server
-  _searchByTitle = () => {
-    console.log("Search by Title");
+  _searchByTitle = (title, event) => {
+     axios.get("https://strange-thing-api.herokuapp.com/api")
+    .then((response) => {
+        const savedGifs = response.data.strangeThings;
+        this.setState({ savedGifs: savedGifs });
+    })
+    .catch((error) => {
+        console.error("Error: ", error);
+    });
   }
 
-  _searchById = () => {
-    console.log("Search by ID");
+  _searchById = (id, event) => {
+    
+
   }
 
   //Pass _searchByTitle, _searchById, and this.state.movie to it's appropriate child components.

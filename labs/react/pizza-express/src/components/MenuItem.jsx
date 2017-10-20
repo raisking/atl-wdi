@@ -3,9 +3,7 @@ import MenuList from './MenuList';
 class MenuItem extends Component {
     render() {
         return (
-            <div className="menu" id="menu">
-                <h1>Menu</h1>
-                <div>
+            <div id="menu">  
                     <div className="menu-item">
                     <img src={this.props.image} />
                         <div className="menu-description">
@@ -16,8 +14,6 @@ class MenuItem extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
-
         )
     }
 }

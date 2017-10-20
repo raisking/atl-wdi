@@ -12,7 +12,8 @@ class LocationList extends Component {
             />
         );
     });
-    return <div className="locations">{locationComponents}</div>
+    return  <div id="locations"><h1>Location: </h1>
+        <div className="locations">{locationComponents}</div></div>
     }
 }
 export default LocationList;

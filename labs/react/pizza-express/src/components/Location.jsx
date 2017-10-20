@@ -5,8 +5,7 @@ class Location extends Component {
     render() {
         return (
             
-            <div id="locations">
-                <h1>Location: </h1>
+          
                     <div className="location">
                         <p>{this.props.name}</p>
                         <strong>Address:</strong>
@@ -14,7 +13,7 @@ class Location extends Component {
                         <strong>Phone:</strong>
                         <p>{this.props.phone}</p>
                     </div>
-                </div>
+             
     
         )
     }

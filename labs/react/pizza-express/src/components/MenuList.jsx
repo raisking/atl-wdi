@@ -15,7 +15,11 @@ class MenuList extends Component {
                             />
             );
         });
-        return <div className="menu-container"> {menuComponents} </div>
+        return <div className = "menu">
+            <h1>Menu</h1>
+            <div className="menu-container"> 
+            {menuComponents} 
+            </div></div>
     }
 }
 export default MenuList;

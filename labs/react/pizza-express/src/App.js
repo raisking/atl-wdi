@@ -15,9 +15,7 @@ class App extends Component {
         <Navbar />
         <SplashImage />
         <Description />
-        <MenuItem />
         <MenuList />
-        <Location />
         <LocationList />
         <Contact />
       </div>
