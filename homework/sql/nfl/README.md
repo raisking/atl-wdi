@@ -28,7 +28,31 @@ _Hint_: In order to do some parts you will need to research commands we did
 not cover in class.
 
 1.  List the names of all NFL teams
+
+nfl=# SELECT name FROM teams;
+         name
+----------------------
+ Buffalo Bills
+ Miami Dolphins
+ New England Patriots
+ New York Jets
+ Baltimore Ravens
+ Cincinnati Bengals
+(6 rows)
+
 2.  List the stadium name and head coach of all NFC teams
+
+nfl=# SELECT stadium, head_coach FROM teams;
+       stadium        |   head_coach
+----------------------+----------------
+ Ralph Wilson Stadium | Doug Marrone
+ Sun Life Stadium     | Joe Philbin
+ Gillette Stadium     | Bill Belichick
+ MetLife Stadium      | Rex Ryan
+ M&T Bank Stadium     | John Harbaugh
+ Paul Brown Stadium   | Marvin Lewis
+(6 rows)
+
 3.  List the head coaches of the AFC South
 4.  The total number of players in the NFL
 
