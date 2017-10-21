@@ -75,19 +75,21 @@ Somehow , It is not showing all the players.
 
 5.  The team names and head coaches of the NFC North and AFC East
 nfl=# SELECT head_coach FROM teams WHERE division = 'North' OR division= 'East';
-   head_coach
-----------------
- Doug Marrone
- Joe Philbin
- Bill Belichick
- Rex Ryan
- John Harbaugh
- Marvin Lewis
-(6 rows)
 
 6.  The 50 players with the highest salaries
+
 7.  The average salary of all NFL players
+nfl=# SELECT AVG(salary) FROM players;
+         avg
+----------------------
+ 2467317.316455696203
+(1 row)
+
 8.  The names and positions of players with a salary above 10_000_000
+nfl=# SELECT * FROM players WHERE salary > 10000000;
+ id | name | position | salary | team_id
+----+------+----------+--------+---------
+(0 rows)
 
 <hr>
 &#x1F534; COMMIT 3<br>
@@ -95,10 +97,28 @@ nfl=# SELECT head_coach FROM teams WHERE division = 'North' OR division= 'East';
 <hr>
 
 9.  The player with the highest salary in the NFL
+nfl=# SELECT MAX (salary) AS highestsalaray FROM players;
+ highestsalaray
+----------------
+        5900000
+(1 row)
+
 10. The name and position of the first 100 players with the lowest salaries
+
+
+
 11. The average salary for a DE in the nfl
+nfl=# SELECT AVG(salary) FROM players WHERE position = 'DE';
+         avg
+----------------------
+ 3937285.714285714286
+(1 row)
+
 12. The names of all the players on the Buffalo Bills
+
 13. The total salary of all players on the New York Giants
+
+
 14. The player with the lowest salary on the Green Bay Packers
 
 _Hint_: In order to do some parts you will need to research commands we did
