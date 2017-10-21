@@ -54,7 +54,19 @@ nfl=# SELECT stadium, head_coach FROM teams;
 (6 rows)
 
 3.  List the head coaches of the AFC South
+nfl=# SELECT * FROM teams WHERE conference = 'AFC' AND division ='South';
+ id | name | stadium | division | conference | head_coach | active
+----+------+---------+----------+------------+------------+--------
+(0 rows)
+
 4.  The total number of players in the NFL
+nfl=# SELECT COUNT(name) FROM players;
+ count
+-------
+   158
+(1 row)
+Somehow , It is not showing all the players. 
+
 
 <hr>
 &#x1F534; COMMIT 2<br>
@@ -62,6 +74,17 @@ nfl=# SELECT stadium, head_coach FROM teams;
 <hr>
 
 5.  The team names and head coaches of the NFC North and AFC East
+nfl=# SELECT head_coach FROM teams WHERE division = 'North' OR division= 'East';
+   head_coach
+----------------
+ Doug Marrone
+ Joe Philbin
+ Bill Belichick
+ Rex Ryan
+ John Harbaugh
+ Marvin Lewis
+(6 rows)
+
 6.  The 50 players with the highest salaries
 7.  The average salary of all NFL players
 8.  The names and positions of players with a salary above 10_000_000
