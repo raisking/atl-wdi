@@ -16,33 +16,33 @@
 Read the first 3 chapters of POODR [available as a PDF here](https://github.com/edenzik/cs105b/blob/master/books/Practical%20Object-Oriented%20Design%20in%20Ruby.pdf) and answer the questions below.
 
 
+
+
 ### Short Answer Questions:
 
 Answer should be no more than a couple of sentences. Refer to the reading.
 
 1. According to Metz, what is Object-oriented design about?
 
-```
-Your Answer Here
-```
+
 
 2. What does SOLID stand for?
 
-```
-Your Answer Here
-```
+    Single responsibility principle (SRP)
+    Open/closed principle (OCP)
+    Liskov substitution principle (LSP)
+    Interface segregation principle (ISP)
+    Dependency inversion principle (DIP)
 
 3. Ruby is a class-based object-oriented language. What does that mean?
 
-```
-Your Answer Here
-```
+
+    Class-based is a style of object-oriented programming (OOP) in which inheritance is achieved by defining classes of objects, as opposed to the objects themselves (compare prototype-based programming).
+
 
 4. Where are methods defined in Ruby?
 
-```
-Your Answer Here
-```
+
 
 5. Why does single Responsibility matter?
 
@@ -52,24 +52,19 @@ Your Answer Here
 
 6. What does `attr_reader` do?
 
-```
-Your Answer Here
-```
+    Attribute is visible outside. It is a short form of readable attribute. 
 
 7. What are 4 benefits Metz outlines for methods that have a single responsibility?
 
-```
-Your Answer Here
-```
+
 
 8. What are 4 things an object knows when it has a dependency?
 
-```
-Your Answer Here
-```
+    The name of another class
+    The name of a message that it intends to send to someone other than self (methods on other objects).
+    The arguments that a message requires.
+    The order of those arguments.
 
 9. Dependency management is core to creating future-proof applications. What does injecting dependencies and isolating dependencies do? What are their benefits?
 
-```
-Your Answer Here
-```
+    
