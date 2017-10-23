@@ -45,7 +45,7 @@ Answer should be no more than a couple of sentences. Refer to the reading.
 
 
 5. Why does single Responsibility matter?
-
+    Able to make existing code usable is a key to keep the code clean and less bugs.
 
 6. What does `attr_reader` do?
 
