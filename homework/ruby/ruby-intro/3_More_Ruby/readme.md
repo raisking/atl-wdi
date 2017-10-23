@@ -52,7 +52,8 @@ Answer should be no more than a couple of sentences. Refer to the reading.
     Attribute is visible outside. It is a short form of readable attribute. 
 
 7. What are 4 benefits Metz outlines for methods that have a single responsibility?
-
+   
+    Single responsibility is transparent, reasonable, usable, and exemplary.
 
 
 8. What are 4 things an object knows when it has a dependency?
