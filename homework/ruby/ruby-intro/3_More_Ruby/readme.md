@@ -23,7 +23,8 @@ Read the first 3 chapters of POODR [available as a PDF here](https://github.com/
 Answer should be no more than a couple of sentences. Refer to the reading.
 
 1. According to Metz, what is Object-oriented design about?
-
+    Object-oriented design is about managing dependencies caused by
+    messaging between objects
 
 
 2. What does SOLID stand for?
@@ -46,9 +47,6 @@ Answer should be no more than a couple of sentences. Refer to the reading.
 
 5. Why does single Responsibility matter?
 
-```
-Your Answer Here
-```
 
 6. What does `attr_reader` do?
 
@@ -67,4 +65,4 @@ Your Answer Here
 
 9. Dependency management is core to creating future-proof applications. What does injecting dependencies and isolating dependencies do? What are their benefits?
 
-    
+
