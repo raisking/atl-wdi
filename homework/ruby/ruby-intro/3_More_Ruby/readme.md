@@ -23,6 +23,7 @@ Read the first 3 chapters of POODR [available as a PDF here](https://github.com/
 Answer should be no more than a couple of sentences. Refer to the reading.
 
 1. According to Metz, what is Object-oriented design about?
+    
     Object-oriented design is about managing dependencies caused by
     messaging between objects
 
@@ -35,14 +36,12 @@ Answer should be no more than a couple of sentences. Refer to the reading.
     Interface segregation principle (ISP)
     Dependency inversion principle (DIP)
 
-3. Ruby is a class-based object-oriented language. What does that mean?
-
+3. Ruby is a class-based object-oriented language. What does that mean?    
 
     Class-based is a style of object-oriented programming (OOP) in which inheritance is achieved by defining classes of objects, as opposed to the objects themselves (compare prototype-based programming).
 
 
 4. Where are methods defined in Ruby?
-
 
 
 5. Why does single Responsibility matter?
