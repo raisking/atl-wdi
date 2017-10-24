@@ -22,6 +22,17 @@ people = [
 upper_case_full_names = []
 
 
+
+# we can also build lists, first start with an empty one
+
+# same as above, but in a more Ruby style
+# this and the next one are the preferred 
+# way Ruby for-loops are written
+# people.each do |fruit|
+#     puts "#{fruit}"
+#   end
+
+
 #   2. Find the first order for each user
 
 users = [
@@ -122,8 +133,17 @@ people = [
     )
 ]
 
-coffee_average_per_person = []
-
+coffee_average_per_person = people.map do |person|
+    counter = 0
+    sum = 0
+    person.transactions.each do |transaction|
+        if transaction.type == 'COFFEE'
+            counter += 1
+            sum += transaction.amount
+        end 
+    end 
+    sum/counter
+end 
 
 #   4. Find the most expensive product for each store, with the store name:
 
