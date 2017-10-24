@@ -17,3 +17,14 @@ e = 2.00
 puts e
 d == e 
 puts d
+
+
+christine = "Hi, I'm Christine"
+puts christine
+likesTo = "long walks on the beach, kinda"
+puts likesTo
+puts "#{christine} and I am #{likesTo}"
+
+g = '2'
+gToNumber = 2
+puts "#{g} + #{gToNumber}"
