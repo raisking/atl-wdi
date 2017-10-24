@@ -28,3 +28,9 @@ puts "#{christine} and I am #{likesTo}"
 g = '2'
 gToNumber = 2
 puts "#{g} + #{gToNumber}"
+
+puts = "Sir, What is your name?"
+name = gets
+puts = "Sir, What do you like to do?"
+like = gets
+puts "He is " + name + "and he lkes " + like
