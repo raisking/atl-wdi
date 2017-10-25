@@ -18,7 +18,10 @@ users = [
     }
 ]
 
-first_user = ???
+
+users.each do |count|
+    puts "a #{count}"
+end
 
 # 2. Find the first customer's account balance
 
@@ -61,7 +64,7 @@ customers = [
     )
 ]
 
-first_customer_account_balance = ???
+# first_customer_account_balance = ???
 
 # 3. Remove hair care products from the database
 
@@ -86,7 +89,7 @@ products = [
     }
 ]
 
-no_hair_care_products = ???
+# no_hair_care_products = ???
 
 # 4. If any item in the array is a number, change it to a String
 # e.g. [1, 2, 'blah'] ===> ['1', '2', 'blah']
@@ -95,7 +98,7 @@ const things = [23, 43, 'strawberry', 'ruby', 234643234, 'another red thing', 13
 
 const string_things = ???
 
-# 5. Sort customers alphabetically by first and last name:
+# 5. Sort customers alphabectically by first and last name:
 
 customers = [
     OpenStruct.new(
@@ -112,23 +115,23 @@ customers = [
     )
 ]
 
-sorted_customers = ???
+# sorted_customers = ???
 
 # 6. Return all decorations with blue in their description
 
-decorations = [
-    {
-        description: 'Blue birthday hat'
-    },
-    {
-        description: 'red balloon'
-    },
-    {
-        description: 'yellow candles'
-    },
-    {
-        description: 'blue confetti'
-    }
-]
+# decorations = [
+#     {
+#         description: 'Blue birthday hat'
+#     },
+#     {
+#         description: 'red balloon'
+#     },
+#     {
+#         description: 'yellow candles'
+#     },
+#     {
+#         description: 'blue confetti'
+#     }
+# ]
 
-blue_decorations = ???
+# blue_decorations = ???
